@@ -1,0 +1,10 @@
+<h1>NoDB AirBnB</h1>
+<ul>
+  <% @flats.each do |flat| %>
+    <li class="flat-card">
+      <img src="<%= flat['imageUrl'] %>" width=200>
+      <p><%= link_to flat['name'], flat_path(flat['id']) %></p>
+      <p><%= "#{flat['priceCurrency']} #{flat['price']}" %></p>
+    </li>
+  <% end %>
+</ul>

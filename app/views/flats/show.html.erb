@@ -1,0 +1,8 @@
+<%= link_to 'Back to index', root_path %>
+<h1><%= @flat['name'] %></h1>
+<img src="<%= @flat['imageUrl'] %>" width=200>
+<p>
+  <span class="flat-currency"><%= @flat['priceCurrency'] %></span>
+  <span class="flat-price"><%= @flat['price'] %></span>
+
+</p>
